@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Test Series</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .hidden {
+      display: none;
+    }
+    .footer-text {
+      text-align: center;
+      margin-top: 20px;
+      color: #555;
+      font-size: 14px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Test Series</h1>
+
+    <form id="user-form">
+      <label for="name">Name</label><br />
+      <input type="text" id="name" placeholder="First Name" required /><br /><br />
+      <input type="text" id="last-name" placeholder="Last Name" required /><br /><br />
+
+      <label for="mobile">Mobile Number</label><br />
+      <input type="tel" id="mobile" placeholder="Enter mobile number" pattern="[0-9]{10}" maxlength="10" required /><br /><br />
+
+      <label for="date">Date</label><br />
+      <input type="date" id="date" required /><br /><br />
+
+      <button type="submit">Submit Details</button>
+    </form>
+
+    <button id="start-btn" class="hidden">Start Test</button>
+
+    <div id="timer" class="hidden">
+      Time Left: <span id="time">2:00</span>
+    </div>
+
+    <div id="quiz-container" class="hidden">
+      <div id="question"></div>
+      <ul id="options"></ul>
+      <div style="display: flex; justify-content: center; gap: 10px; margin-top: 20px;">
+        <button id="prev-btn" disabled>Previous</button>
+        <button id="next-btn">Next</button>
+      </div>
+    </div>
+
+    <div id="result" class="hidden">
+      <div id="score" style="font-size: 18px; font-weight: bold; text-align: center; margin-bottom: 20px;"></div>
+    </div>
+
+    <div id="footer" class="footer-text">
+      <a href="https://pratik-lt.github.io/My-portfolio-/" target="_blank" style="text-decoration: none; color: inherit;">
+        Designed by <span style="color: #007BFF;">Pratik</span>
+      </a>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

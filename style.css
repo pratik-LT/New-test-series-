@@ -1,0 +1,126 @@
+/* Global styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(135deg, #ff7f50, #ff6f00);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.container {
+  background: white;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  max-width: 600px;
+  width: 100%;
+  animation: slideIn 0.5s ease-in-out;
+}
+
+h1 {
+  text-align: center;
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+#question {
+  font-size: 22px;
+  font-weight: 500;
+  color: #444;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+#options {
+  list-style: none;
+  padding: 0;
+  margin-bottom: 20px;
+}
+
+#options li {
+  margin-bottom: 15px;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+#options input[type="radio"] {
+  margin-right: 15px;
+  transform: scale(1.2);
+}
+
+button {
+  background: #ff6f00;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  width: 100%;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover {
+  background: #ff7f50;
+  transform: translateY(-3px);
+}
+
+button:active {
+  transform: translateY(1px);
+}
+
+.hidden {
+  display: none;
+}
+
+#timer {
+  font-size: 18px;
+  text-align: center;
+  color: white;
+  margin-bottom: 15px;
+  font-weight: 500;
+  background: #ff7f50;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1s ease-in-out;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+#result {
+  font-size: 20px;
+  text-align: center;
+  color: white;
+  padding: 20px;
+  background: #ff7f50;
+  border-radius: 10px;
+  margin-top: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  animation: fadeIn 1.5s ease-in-out;
+}
